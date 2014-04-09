@@ -12,11 +12,11 @@ First create a folder that will contain our porting project, here it will be nam
 
 Then go to your OpenCV installation and copy to this folder the following files:
 
-* <openCV_DIR>/build/cvconfig.h
-* <openCV_DIR>/modules/nonfree/src/nonfree_init.cpp
-* <openCV_DIR>/modules/nonfree/src/precomp.hpp
-* <openCV_DIR>/modules/nonfree/src/sift.cpp
-* <openCV_DIR>/modules/nonfree/src/surf.cpp
+* \<openCV_DIR\>/build/cvconfig.h
+* \<openCV_DIR\>/modules/nonfree/src/nonfree_init.cpp
+* \<openCV_DIR\>/modules/nonfree/src/precomp.hpp
+* \<openCV_DIR\>/modules/nonfree/src/sift.cpp
+* \<openCV_DIR\>/modules/nonfree/src/surf.cpp
 
 Now create the Android build files: Android.mk and Application.mk
 
@@ -48,7 +48,7 @@ Now create the Android build files: Android.mk and Application.mk
 
 ### Bulding the project
 
-Change Android.mk and Application.mk files, replacing <openCV_ANDROID_SDK_DIR> with the path applicable to your environment.
+Change Android.mk and Application.mk files, replacing \<openCV_ANDROID_SDK_DIR\> with the path applicable to your environment.
 Navigate to project dir in terminal and run ndk-build. This will create two shared libraries compatible with Android: libnonfree.so and libopencv_java.so.
 
 ## Running the application
